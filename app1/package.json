@@ -1,0 +1,30 @@
+{
+  "name": "app1",
+  "version": "1.0.0",
+  "description": "app1 js components",
+  "main": "app1.js",
+  "scripts": {
+    "start": "angular-http-server -p 9001 --baseHref app1 --cors false",
+    "build": "NODE_ENV=production npm run build:dev",
+    "build:dev": "rollup --config rollup.config.js"
+  },
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "^17.1.0",
+    "@rollup/plugin-node-resolve": "^11.2.0",
+    "@rollup/plugin-virtual": "^2.0.3",
+    "@rollup/pluginutils": "^4.1.0",
+    "@types/node": "^14.14.28",
+    "@webcomponents/custom-elements": "^1.4.3",
+    "angular-http-server": "^1.11.1",
+    "mime-types": "^2.1.30",
+    "postcss": "^8.2.6",
+    "rollup": "^2.39.0",
+    "rollup-plugin-copy": "^3.4.0",
+    "rollup-plugin-delete": "^2.0.0",
+    "rollup-plugin-postcss": "^4.0.0",
+    "rollup-plugin-terser": "^7.0.2",
+    "rollup-plugin-typescript2": "^0.29.0",
+    "ts-node": "^9.1.1",
+    "typescript": "^4.1.5"
+  }
+}
